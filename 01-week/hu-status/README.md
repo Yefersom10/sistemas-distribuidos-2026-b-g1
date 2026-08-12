@@ -6,7 +6,7 @@
 
 <!-- CONFIG-START - must match your profile repo (username/username) CONFIG -->
 - FULL_NAME: Yeferson Esmid Heredia Perdomo
-- GITHUB_USER: Yeferson10
+- GITHUB_USER: Yefersom10
 - TEAM: CineSync Platform
 - SPRINT_GOAL: Define and structure the Booking & Seat Reservation Service, establishing the business rules for seat availability, temporary holds, and reservation confirmation, together with its architecture, persistence, and event-based integration.
 <!-- CONFIG-END -->

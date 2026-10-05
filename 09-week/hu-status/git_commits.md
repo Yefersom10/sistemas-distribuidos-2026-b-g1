@@ -2,27 +2,25 @@
 
 ## Repository: `csp-docs` (16 commits)
 
-| Date | Hash | Commit Message | Status | URL |
-|---|---|---|---|
-| 28 Sep | `6453757` | docs(product): add product backlog aligned with vision and user stories | https://github.com/code-corhuila/csp-docs/commit/645375720ea56821c80eb131870a24c82272529f |
-| 28 Sep | `885e829` | docs(architecture): add deployment.md describing environment-level database infrastructure | https://github.com/code-corhuila/csp-docs/commit/885e829e22b1a5b17ada63e073ef591cda59dc00 |
-| 28 Sep | `745b68e` | docs(data): create global data-dictionary.md for all service schemas and collections | https://github.com/code-corhuila/csp-docs/commit/745b68ec8e72c4903e8a50e9d301a1c495201f31 |
-| 28 Sep | `e06bd07` | docs(product): merge PR #31 from code-corhuila/docs/add-product-backlog | https://github.com/code-corhuila/csp-docs/commit/e06bd076ea21ccee719069ffaa34863bc27b8b93 |
-| 29 Sep | `e423641` | docs(architecture): merge PR #33 for deployment topology and global data dictionary | https://github.com/code-corhuila/csp-docs/commit/e4236417e2837bb2d209abe4a16e138f3ca5d9e2 |
-| 29 Sep | `0b9c519` | docs(data): align physical models with API contracts and cents standard | https://github.com/code-corhuila/csp-docs/commit/0b9c51957a1273ad38d1e74753aea0a295bbe1ca |
-| 29 Sep | `48b5796` | docs(architecture): merge PR #36 for architecture, gateway, and governance alignment | https://github.com/code-corhuila/csp-docs/commit/48b5796a22b1ac7c81cc9e7660a4aef96ab4b470 |
-| 29 Sep | `f302554` | docs(architecture): merge PR #40 for ADR-011, architecture, gateway, and auth traceability alignment | https://github.com/code-corhuila/csp-docs/commit/f302554cccdc10489f90df9d61a8ff4b0722f7e2 |
-| 29 Sep | `e359279` | docs(architecture): add ADR-011, align C4 views, routing, and auth data model | https://github.com/code-corhuila/csp-docs/commit/e359279e7ed6db0213321f7e192d15cea30f396b |
-| 30 Sep | `83fcb51` | docs(governance): align database topology wording with ADR-006 shared instance | https://github.com/code-corhuila/csp-docs/commit/83fcb51a5dd5bfaf128d0d996777e42e3ceef6f4 |
-| 30 Sep | `f1d4b3d` | docs(governance): Pr #42 align database topology wording with ADR-006 shared instance | https://github.com/code-corhuila/csp-docs/commit/f1d4b3d63b973a6feecd65a03a9843d676ccfdf7 |
-| 30 Sep | `6030e4e` | docs(api): enforce /api/v1/{service} base paths and complete gateway routing table | https://github.com/code-corhuila/csp-docs/commit/6030e4e6fcc5c83a986d89a51a6f20872acde94c |
-| 30 Sep | `5f0c690` | docs(api): merge Pr #43 enforce /api/v1/{service} base paths and complete gateway routing table | https://github.com/code-corhuila/csp-docs/commit/5f0c690ebdafb7ca733cedae142dc0ae73be38b7 |
-| 04 Oct | `ae73e58` | docs(governance): point the branching policy at the qa-promote prefix of ADR-021 | https://github.com/code-corhuila/csp-docs/commit/ae73e585d48f80b3e177a3d960070240b77fe8e5 |
-| 04 Oct | `edd534b` | merge main into docs/branching-policy-qa-promote: keep both ADR register rows | https://github.com/code-corhuila/csp-docs/commit/edd534bcd724d651b923d0b3558492f594030016 |
-| 04 Oct | `99e212a` | docs(governance): explain -m 1 and cite the numerals behind the trail | https://github.com/code-corhuila/csp-docs/commit/99e212abdc823addf370ca8f124993ab4dfa9827 |
-
+| Date   | Hash      | Commit Message                                                                                       | Status | URL                                                                                       |
+| ------ | --------- | ---------------------------------------------------------------------------------------------------- | ------ | ----------------------------------------------------------------------------------------- |
+| 28 Sep | `6453757` | docs(product): add product backlog aligned with vision and user stories                              | —      | https://github.com/code-corhuila/csp-docs/commit/645375720ea56821c80eb131870a24c82272529f |
+| 28 Sep | `885e829` | docs(architecture): add deployment.md describing environment-level database infrastructure           | —      | https://github.com/code-corhuila/csp-docs/commit/885e829e22b1a5b17ada63e073ef591cda59dc00 |
+| 28 Sep | `745b68e` | docs(data): create global data-dictionary.md for all service schemas and collections                 | —      | https://github.com/code-corhuila/csp-docs/commit/745b68ec8e72c4903e8a50e9d301a1c495201f31 |
+| 28 Sep | `e06bd07` | docs(product): merge PR #31 from code-corhuila/docs/add-product-backlog                              | —      | https://github.com/code-corhuila/csp-docs/commit/e06bd076ea21ccee719069ffaa34863bc27b8b93 |
+| 29 Sep | `e423641` | docs(architecture): merge PR #33 for deployment topology and global data dictionary                  | —      | https://github.com/code-corhuila/csp-docs/commit/e4236417e2837bb2d209abe4a16e138f3ca5d9e2 |
+| 29 Sep | `0b9c519` | docs(data): align physical models with API contracts and cents standard                              | —      | https://github.com/code-corhuila/csp-docs/commit/0b9c51957a1273ad38d1e74753aea0a295bbe1ca |
+| 29 Sep | `48b5796` | docs(architecture): merge PR #36 for architecture, gateway, and governance alignment                 | —      | https://github.com/code-corhuila/csp-docs/commit/48b5796a22b1ac7c81cc9e7660a4aef96ab4b470 |
+| 29 Sep | `f302554` | docs(architecture): merge PR #40 for ADR-011, architecture, gateway, and auth traceability alignment | —      | https://github.com/code-corhuila/csp-docs/commit/f302554cccdc10489f90df9d61a8ff4b0722f7e2 |
+| 29 Sep | `e359279` | docs(architecture): add ADR-011, align C4 views, routing, and auth data model                        | —      | https://github.com/code-corhuila/csp-docs/commit/e359279e7ed6db0213321f7e192d15cea30f396b |
+| 30 Sep | `83fcb51` | docs(governance): align database topology wording with ADR-006 shared instance                       | —      | https://github.com/code-corhuila/csp-docs/commit/83fcb51a5dd5bfaf128d0d996777e42e3ceef6f4 |
+| 30 Sep | `f1d4b3d` | docs(governance): Pr #42 align database topology wording with ADR-006 shared instance                | —      | https://github.com/code-corhuila/csp-docs/commit/f1d4b3d63b973a6feecd65a03a9843d676ccfdf7 |
+| 30 Sep | `6030e4e` | docs(api): enforce /api/v1/{service} base paths and complete gateway routing table                   | —      | https://github.com/code-corhuila/csp-docs/commit/6030e4e6fcc5c83a986d89a51a6f20872acde94c |
+| 30 Sep | `5f0c690` | docs(api): merge Pr #43 enforce /api/v1/{service} base paths and complete gateway routing table      | —      | https://github.com/code-corhuila/csp-docs/commit/5f0c690ebdafb7ca733cedae142dc0ae73be38b7 |
+| 04 Oct | `ae73e58` | docs(governance): point the branching policy at the qa-promote prefix of ADR-021                     | —      | https://github.com/code-corhuila/csp-docs/commit/ae73e585d48f80b3e177a3d960070240b77fe8e5 |
+| 04 Oct | `edd534b` | merge main into docs/branching-policy-qa-promote: keep both ADR register rows                        | —      | https://github.com/code-corhuila/csp-docs/commit/edd534bcd724d651b923d0b3558492f594030016 |
+| 04 Oct | `99e212a` | docs(governance): explain -m 1 and cite the numerals behind the trail                                | —      | https://github.com/code-corhuila/csp-docs/commit/99e212abdc823addf370ca8f124993ab4dfa9827 |
 ---
-
 ## Repository: `csp-booking-api` (11 commits)
 
 | Date | Hash | Commit Message | Status | URL |

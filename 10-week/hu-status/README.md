@@ -32,6 +32,8 @@
 - **Documentation (`csp-docs`):** expiration runbook (#97), story status updates (#98, #100, #108, #116), data dictionary for V011 (#102), ADR-014 amendment (#104), admin route, wireframe and `booking:read:all` permission (#105), relay delivery trail (#109), `qa-promote` branching policy (#88).
 - **Release:** `release/2.0.0` promoted from qa to main in the four Booking repositories: [db#37](https://github.com/code-corhuila/csp-booking-db/pull/37), [worker#17](https://github.com/code-corhuila/csp-worker/pull/17), [api#54](https://github.com/code-corhuila/csp-booking-api/pull/54), [portal#53](https://github.com/code-corhuila/csp-booking-portal/pull/53). Scaffold promotions of Catalog, Concessions and Ticketing portals to qa/main (5 Oct).
 - **Volume:** 356 commits in 9 repositories, full list with URLs in [git_commits.md](./git_commits.md).
+- **PR breakdown (132 PRs opened this week):** 56 are my own feature, fix, refactor, test and docs PRs; 76 are promotions to qa/main, changelogs and release merges. Classified by PR title; the own-work group includes 3 scaffold PRs and some closed PRs (e.g. portal #20, #21, #32), and the promotion group includes 9 closed ones.
+- **Ceremonies:** defined in `csp-docs/00-governance/agile-conventions.md`; no planning, daily, review or retro minutes were recorded this week. Flow is covered by per-environment PRs (develop -> qa -> main).
 
 ## 3. Blockers and risks
 - No local PostgreSQL (application control policy): integration tests run in CI or Docker containers, and Docker Desktop shuts down on its own.

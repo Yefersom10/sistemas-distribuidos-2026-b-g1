@@ -23,3 +23,4 @@ the events `ReservationHeld`, `BookingConfirmed` and `ReservationExpired` to the
 |---|---|
 | CP1 | [01-journey.md](./01-journey.md) |
 | CP2 | [02-log-contract.md](./02-log-contract.md) |
+| CP3 | [03-instrumentation](./03-instrumentation/HOW-TO-RUN.md) |

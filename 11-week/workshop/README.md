@@ -22,3 +22,4 @@ the events `ReservationHeld`, `BookingConfirmed` and `ReservationExpired` to the
 | Checkpoint | File |
 |---|---|
 | CP1 | [01-journey.md](./01-journey.md) |
+| CP2 | [02-log-contract.md](./02-log-contract.md) |

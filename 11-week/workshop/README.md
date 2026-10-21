@@ -16,3 +16,9 @@ Individual delivery for the Booking and Seat Reservation Service of the Cinesync
 I own the Booking and Seat Reservation Service (`csp-booking-api`, `csp-booking-db`,
 `csp-booking-portal`). It creates temporary seat holds, confirms or expires them, and writes
 the events `ReservationHeld`, `BookingConfirmed` and `ReservationExpired` to the outbox.
+
+## Files
+
+| Checkpoint | File |
+|---|---|
+| CP1 | [01-journey.md](./01-journey.md) |

@@ -28,3 +28,4 @@ the events `ReservationHeld`, `BookingConfirmed` and `ReservationExpired` to the
 | CP6 | [05-slo.md](./05-slo.md) |
 | CP7 | [06-alert-policy.md](./06-alert-policy.md), [06-alerts.yml](./06-alerts.yml) |
 | CP8 | [07-runbook.md](./07-runbook.md) |
+| CP9 | [08-incident.md](./08-incident.md) |

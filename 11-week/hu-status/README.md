@@ -20,11 +20,13 @@
 | csp-booking-portal#56 | Visible portal text in Spanish | todo | https://github.com/code-corhuila/csp-booking-portal/issues/56 |
 | Demo runbook | Rehearsed demo runbook of the platform | done | https://github.com/code-corhuila/csp-docs/pull/121 |
 | Video record | Record of the promotional video | done | https://github.com/code-corhuila/csp-docs/pull/127 |
+| W11 workshop, delivery 1 | Observability of the Booking hold and confirm journey (CP0 to CP4) | done | https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/tree/main/11-week/workshop |
 
 ## 2. My individual contribution
 - **Deployment (portal):** the container healthcheck now checks `127.0.0.1` instead of `localhost`, which nginx resolved to `::1` ([csp-booking-portal#55](https://github.com/code-corhuila/csp-booking-portal/pull/55), 9 lines added and 2 removed), with a CHANGELOG note under `Unreleased`. The PR is approved and its CI passed on 2026-10-13; it is not merged yet.
 - **Booking documentation:** rehearsed demo runbook with what it does not cover and what was not observed ([csp-docs#121](https://github.com/code-corhuila/csp-docs/pull/121), 64 lines), linked to its stories and ADR.
 - **Training documentation:** record of the promotional video and the source of its music ([csp-docs#127](https://github.com/code-corhuila/csp-docs/pull/127), 72 lines).
+- **W11 workshop, delivery 1 (2026-10-20):** mapped the hold and confirm journey with its trace propagation ([a9916fb](https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/commit/a9916fbe99657317bd18b3dbc9dfa481048b9d8d)), defined the structured log contract ([bd847b5](https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/commit/bd847b550b4e9a3e8f13f0fe0e97a78ff91d1e00)), wrote a Spring Boot instrumentation module with a trace-context filter, JSON logger, downstream propagation to Catalog and two metrics, tested with 9 passing tests ([595eee3](https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/commit/595eee354a37590b251dfa0d14e09562ed5f21c4)), and the golden-signals catalog ([a4c07bd](https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/commit/a4c07bdfb2f10a0078c73eee714cb5f00d5797b9)). The module is a sample; `csp-booking-api` is unchanged.
 - **Cross-cutting documentation in csp-docs** (merged 2026-10-12 UTC): risk register, open questions, dependencies and technical backlog ([#117](https://github.com/code-corhuila/csp-docs/pull/117)); backup and recovery, observability and incidents bound to the CSP services ([#118](https://github.com/code-corhuila/csp-docs/pull/118)); code review guide and testing strategy ([#119](https://github.com/code-corhuila/csp-docs/pull/119)); user and administrator manuals and onboarding ([#120](https://github.com/code-corhuila/csp-docs/pull/120)). They were opened on the evening of Sunday 2026-10-11 in Colombian time (UTC-5), so they fall on Monday in UTC and were not counted in Week 10.
 - **PR breakdown (7 PRs opened this week):** all 7 are my own docs and fix PRs; there are no promotions, changelogs or release merges. 6 merged and 1 open (#55). If #117 to #120 are assigned to Week 10 by local time, 3 remain in this week.
 - **No code changes** this week in `csp-booking-api`, `csp-booking-db` or `csp-worker`; the work was operations and documentation.
@@ -41,13 +43,13 @@
 - Open the PR for issue #56 (visible portal text in Spanish).
 - Resolve the pending operations items: V013, outbox purge decision and the `events.md` exchange.
 - Record real ceremony minutes (planning, review, retro) in `csp-docs` so the next report can evidence them.
-- Observability: no class deliverable exists yet; the observability section of csp-docs#118 is the base to turn the logs, metrics and traces topic into testable stories.
+- Observability: finish delivery 2 of the workshop (SLOs, burn-rate alerts, runbook and incident drill) and turn the `traceparent` proposal into an ADR and testable stories for `csp-booking-api`.
 
 ## 5. Compliance self-check
 - [x] Conventional Commits - `type(scope): summary`
 - [x] Per-environment HU branch + PR to that environment (hu-xxx-dev -> develop, ...)
 - [x] Testable acceptance criteria
-- [ ] Tests added/updated (unit / integration)
+- [x] Tests added/updated (unit / integration)
 - [x] DDD / hexagonal boundaries respected (domain has no I/O)
 - [x] No secrets; config via environment variables
 
@@ -58,6 +60,7 @@
 - Promotional video record: https://github.com/code-corhuila/csp-docs/pull/127
 - Operations, quality and training documentation: https://github.com/code-corhuila/csp-docs/pull/117 · https://github.com/code-corhuila/csp-docs/pull/118 · https://github.com/code-corhuila/csp-docs/pull/119 · https://github.com/code-corhuila/csp-docs/pull/120
 - Repositories: https://github.com/code-corhuila/csp-docs · https://github.com/code-corhuila/csp-booking-portal
+- W11 workshop folder: https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/tree/main/11-week/workshop
 - Class Material - Observability (logs, metrics and distributed tracing):
 
 ![Observability — logs, metrics and distributed tracing](Observability-—-logs_-metrics-and-distributed-tracing.png)

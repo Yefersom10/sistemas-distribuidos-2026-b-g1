@@ -1,0 +1,46 @@
+# Burn-rate alerts for SLO 1 of 05-slo.md: 99.5 % availability of POST /holds in 30 days.
+# Error budget = 1 - 0.995 = 0.005, so an alert fires when the error ratio is above burn_rate * 0.005.
+groups:
+  - name: booking-hold-availability
+    rules:
+      - alert: BookingHoldFastBurn
+        # Burn rate 14.4 in 1 hour (7.2 % errors), confirmed by the last 5 minutes.
+        expr: |
+          (
+            sum(rate(booking_requests_total{route="/api/v1/booking/holds",outcome="server_error"}[1h]))
+            / sum(rate(booking_requests_total{route="/api/v1/booking/holds"}[1h]))
+            > (14.4 * 0.005)
+          )
+          and
+          (
+            sum(rate(booking_requests_total{route="/api/v1/booking/holds",outcome="server_error"}[5m]))
+            / sum(rate(booking_requests_total{route="/api/v1/booking/holds"}[5m]))
+            > (14.4 * 0.005)
+          )
+        labels:
+          severity: page
+          team: booking
+        annotations:
+          summary: "POST /holds is burning the 30-day error budget 14.4 times too fast (2 % of the budget in 1 hour)"
+          runbook_url: "https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/blob/main/11-week/workshop/07-runbook.md"
+
+      - alert: BookingHoldSlowBurn
+        # Burn rate 6 in 6 hours (3 % errors), confirmed by the last 30 minutes.
+        expr: |
+          (
+            sum(rate(booking_requests_total{route="/api/v1/booking/holds",outcome="server_error"}[6h]))
+            / sum(rate(booking_requests_total{route="/api/v1/booking/holds"}[6h]))
+            > (6 * 0.005)
+          )
+          and
+          (
+            sum(rate(booking_requests_total{route="/api/v1/booking/holds",outcome="server_error"}[30m]))
+            / sum(rate(booking_requests_total{route="/api/v1/booking/holds"}[30m]))
+            > (6 * 0.005)
+          )
+        labels:
+          severity: ticket
+          team: booking
+        annotations:
+          summary: "POST /holds is burning the 30-day error budget 6 times too fast (5 % of the budget in 6 hours)"
+          runbook_url: "https://github.com/Yefersom10/sistemas-distribuidos-2026-b-g1/blob/main/11-week/workshop/07-runbook.md"

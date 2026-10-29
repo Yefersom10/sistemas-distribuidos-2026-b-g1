@@ -23,8 +23,20 @@ The test needs no database and no network: it builds the real `JwtAuthentication
 
 ## Console output
 
-Pending (checkpoint CP8).
+Run on 2026-10-29 in a throwaway worktree of `csp-booking-api` at `origin/develop`, with Java 21 and Maven 3.9.9 (only the relevant lines of the Maven log):
+
+```text
+[INFO] Running co.edu.corhuila.csp.booking.adapter.in.http.ForgedWorkflowTokenAuthzTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.05 s -- in co.edu.corhuila.csp.booking.adapter.in.http.ForgedWorkflowTokenAuthzTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Reactor Summary for booking 0.1.0:
+[INFO] booking ............................................ SUCCESS [  0.008 s]
+[INFO] booking-core ....................................... SUCCESS [  6.674 s]
+[INFO] booking-adapters ................................... SUCCESS [ 15.373 s]
+[INFO] BUILD SUCCESS
+[INFO] Total time:  23.643 s
+```
 
 ## Workflow validation
 
-Pending (checkpoint CP8).
+`security.yml` was parsed with PyYAML: it is valid YAML with the trigger `pull_request` on `develop` and three jobs (`secret-scan`, `dependency-audit`, `authorization-tests`). `actionlint` was not run because it is not installed on this machine and Docker was off, so the semantic check of the actions is pending. GitHub Actions is locked by billing, so the workflow itself has not run in CI.

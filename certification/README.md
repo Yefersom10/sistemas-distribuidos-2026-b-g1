@@ -18,8 +18,9 @@
 
 | Date | Hours | Chapters or labs | Evidence file |
 |---|---|---|---|
-| <YYYY-MM-DD> | <h> | <Chapters or labs> | <evidence/NN-....png> |
-| Total | <sum> | | |
+| 2026-11-03 | 0.17 | Pre-class Guidance | evidence/00-enrollment.png |
+| 2026-11-04 | 0.76 | Chapter 1 | evidence/01-chapter-01.png |
+| Total | 0.93 | | |
 
 ## Labs
 
